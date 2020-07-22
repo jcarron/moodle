@@ -1,0 +1,30 @@
+{{#showright}}
+        <a class="nav-link" href="javascript:void(0)" id="openoverlaymenu">
+        <i class="fa {{{menuslinkicon}}} fa-lg"></i><span class="linksdesc">{{#showlinktext}}{{#str}}linksmenu, theme_adaptable{{/str}}{{/showlinktext}}</span>
+        </a>
+{{/showright}}
+
+{{^showright}}
+        <a class="nav-link" href="javascript:void(0)" id="openoverlaymenu">
+        <i class="fa fa-link fa-lg"></i><span class="linksdesc">{{#showlinktext}}{{#str}}linksmenu, theme_adaptable{{/str}}{{/showlinktext}}</span>
+        </a>
+{{/showright}}
+
+<div id="conditionalmenu" class="overlaymenu">
+    <a id="overlaymenuclose" href="javascript:void(0)" class="btn btn-default pull-right overlayclosebtn">
+        <i class="fa fa-close"></i>
+    </a>
+    <div class="overlay-content">
+        {{#rows}}
+        <div class="row-fluid">
+            {{#menus}}
+                <div class="span{{span}}">
+                    <ul class="overlaylist">
+                        {{{menuitems}}}
+                    </ul>
+                </div>
+            {{/menus}}
+        </div>
+        {{/rows}}
+    </div>
+</div>
