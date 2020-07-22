@@ -1,0 +1,111 @@
+/*
+ * This file is part of Moodle - http://moodle.org/
+ *
+ * Moodle is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Moodle is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ * Adaptable User styles style sheet
+ *
+ * @package    theme_adaptable
+ * @copyright  2019 G J Barnard - {@link http://moodle.org/user/profile.php?id=442195}
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
+ */
+
+.path-user .userprofile > .page-context-header,
+.path-user .userprofile > .description {
+    display: none;
+}
+
+#page-user-profile .node_category li,
+.path-user .node_category li {
+    margin-bottom: 5px;
+}
+
+#adaptable_profile_tree .ucol1 .node_category.contact {
+    margin-top: 3.5em; /* Magic number to line up with tabs. */
+}
+
+#adaptable_profile_tree .ucol1 .node_category.contact .firstname,
+#adaptable_profile_tree .ucol1 .node_category.contact .fullname {
+    padding-top: 30px;
+}
+
+#adaptable_profile_tree .ucol1 .adaptableuserpicture {
+    position: relative;
+}
+
+#adaptable_profile_tree .ucol1 .adaptableuserpicture a {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+
+#adaptable_profile_tree .ucol1 .adaptableuserpicture a img.userpicture {
+    margin-right: 0;
+}
+
+
+.path-user #adaptable_profile_tree .node_category .editprofile {
+    text-align: left;
+}
+
+#adaptable_profile_tree .ucol1 .adaptableuserpicture a,
+.path-user #adaptable_profile_tree .ucol1 .node_category .editprofile,
+#adaptable_profile_tree .ucol1 .contentnode {
+    text-align: center;
+}
+
+#adaptable_profile_tree .ucol1 .firstname,
+#adaptable_profile_tree .ucol1 .fullname,
+#adaptable_profile_tree .ucol1 .lastname {
+    font-weight: bold;
+}
+
+#adaptable_profile_tree .ucol1 .firstname,
+#adaptable_profile_tree .ucol1 .fullname {
+    font-size: 150%;
+}
+
+#adaptable_profile_tree .ucol1 .lastname {
+    font-size: 140%;
+}
+
+.adaptablemyeditprofile .col-md-3,
+.adaptablemyeditprofile .col-md-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.adaptablemyeditprofile .col-md-3 span.float-sm-right {
+    float: none !important;
+}
+
+.adaptablemyeditprofile .col-md-3 label.col-form-label.d-inline {
+    float: left !important;
+}
+
+.adaptablemyeditprofile .col-md-3 .text-info,
+.adaptablemyeditprofile .col-md-3 label.col-form-label.d-inline {
+    margin: 0;
+}
+
+.adaptablemyeditprofile .col-md-3 .btn {
+    height: 26px;
+}
+
+.adaptablemyeditprofile .fp-restrictions {
+    text-align: left;
+}
