@@ -24,7 +24,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_duallang';
 $plugin->release = 'alpha1';
-$plugin->version = 2016112300;
+$plugin->version = 2020081202;
 $plugin->requires = 2015030900;
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->dependencies = array();

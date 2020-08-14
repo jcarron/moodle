@@ -23,3 +23,22 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Dual language string manager';
+
+$string['local_duallang'] = 'Dual language display';
+
+$string['generalheading'] = 'General settings';
+
+$string['enableduallangs'] = 'Enable dual language display';
+
+$string['enableduallangsdesc'] = 'Enables Dual Language Plugin';
+
+$string['languageheading'] = 'Language configuration';
+
+$string['primarylang'] = 'Primary language';
+$string['primarylang_desc'] = 'The language users speak best';
+$string['secondarylang'] = 'Secondary language';
+$string['secondarylang_desc'] = 'Not the user\'s native language but, typically, the language used in their locale';
+$string['readingorder'] = 'Reading order';
+$string['readingorder_desc'] = 'The reading order setting specifies whether the primary language is displayed to the left or the right of the secondary language';
+$string['lefttoright'] = 'Left to right';
+$string['righttoleft'] = 'Right to left';
