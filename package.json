@@ -1,0 +1,31 @@
+{
+  "name": "theme-adaptable-tasks",
+  "version": "0.1.1",
+  "description": "Grunt tasks for Moodle Adaptable theme.",
+  "main": "Gruntfile.js",
+  "author": {
+    "name": "Gareth J Barnard",
+    "url": "http://about.me/gjbarnard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/3bits/moodle-theme_adaptable2.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/3bits/moodle-theme_adaptable2/issues"
+  },
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-exec": "~0.4.6",
+    "grunt-contrib-jshint": "2.0.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "grunt-sass": "2.1.0",
+    "grunt-stylelint": "0.6.0",
+    "semver": "5.3.0",
+    "stylelint": "8.0.0"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "license": "GPL-3.0"
+}
