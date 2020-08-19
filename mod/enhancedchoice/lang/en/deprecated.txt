@@ -1,0 +1,2 @@
+enhancedchoiceactivityname,mod_enhancedchoice
+enhancedchoicecloseson,mod_enhancedchoice

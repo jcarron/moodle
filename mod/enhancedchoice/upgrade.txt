@@ -1,0 +1,27 @@
+This files describes API changes in /mod/enhancedchoice/*,
+information provided here is intended especially for developers.
+
+=== 3.3.2 ===
+
+* enhancedchoice_refresh_events() Now takes two additional parameters to refine the update to a specific instance. This function
+  now optionally takes the module instance object or ID, and the course module object or ID. Please try to send the full
+  objects instead of the ids to save DB calls.
+
+=== 3.2 ===
+
+* Events mod_enhancedchoice\event\answer_submitted and mod_enhancedchoice\event\answer_updated
+  are no longer triggered. Observers listening to these events must instead listen
+  to mod_enhancedchoice\event\answer_created and mod_enhancedchoice\event\answer_deleted that are
+  triggered for each option that is selected or unselected. User whose enhancedchoice was
+  modified can be found in $event->relateduserid (this does not have to be the
+  user who performs the action).
+
+=== 3.0 ===
+
+* External function mod_enhancedchoice_external::get_enhancedchoices_by_courses returned parameter "name" and
+  mod_enhancedchoice_external::get_enhancedchoice_results "text" have been changed to PARAM_RAW.
+  This is because the new external_format_string function may return raw data if the global moodlewssettingraw parameter is used.
+
+=== 2.9 ===
+
+* custom renderers must be updated to include action=makeenhancedchoice field in display_options()
